@@ -1,7 +1,10 @@
 # docker-images
 
-docker run -i -t alpine
+# getting apline linux OS docker image
+$ docker pull alpine
 
-docker run -i -t --name test -v ./test:/home alpine
+# run docker container for committing docker image
+$ docker run -i -t --name test -v ./test:/home alpine
 
-docker commit -a "tester" -m "description" test test-docker-img:latest
+# commit docker image based on running docker container
+$ docker commit -a "tester" -m "description" test test-docker-img:latest
