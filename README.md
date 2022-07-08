@@ -19,3 +19,8 @@ $ docker commit -a "tester" -m "description" test test-docker-img:latest
 # save the docker image as a suffix for compressed file
 $ docker save -o test-docker-img.tar test-docker-img
 ```
+
+```
+# load docker image from compressed file
+$ docker load -i test-docker-img.tar
+```
