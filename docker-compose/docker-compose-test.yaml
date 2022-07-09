@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  test-docker:
+    container_name: test-docker
+    image: test-docker-img:latest
+    command: ./test
