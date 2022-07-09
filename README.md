@@ -1,4 +1,10 @@
-# docker-images
+## Prerequisites 
+
+``` 
+$ go build test.go
+``` 
+
+## Create Customized Docker Image
 
 ```
 # getting apline linux OS docker image
@@ -7,13 +13,25 @@ $ docker pull alpine
 
 ```
 # run docker container for committing docker image
-$ docker run -i -t --name test -v ./test:/home alpine
+$ docker run -i -t --name test -v ~/docker-images:/home alpine
+```
+
+```
+$ cp /home/test ./
 ```
 
 ```
 # commit docker image based on running docker container
 $ docker commit -a "tester" -m "description" test test-docker-img:latest
 ```
+
+## Run Docker Container based on Customized Docker Image
+
+```
+$ ./run-docker.sh
+```
+
+## Save/Load Customized Created Docker Image
 
 ```
 # save the docker image as a suffix for compressed file
