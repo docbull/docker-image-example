@@ -1,4 +1,4 @@
-## Prerequisites 
+## Create bash file
 
 ``` 
 $ go build test.go
@@ -29,6 +29,7 @@ $ docker commit -a "tester" -m "description" test test-docker-img:latest
 
 ```
 $ ./run-docker.sh
+$ docker logs test
 ```
 
 ## Save/Load Customized Created Docker Image
